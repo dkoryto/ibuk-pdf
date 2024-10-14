@@ -23,7 +23,8 @@ const path = require('path');
   // Perform login
   await page.type('#loginform-username', credentials.username);
   await page.type('#loginform-password', credentials.password);
-  await page.click('#customer_login > div.clearfix > button');
+  await page.focus('#customer_login > div.clearfix > button');
+  await page.keyboard.press('Enter');
   await page.waitForNavigation({ waitUntil: 'networkidle2' });
   console.log('Logged in successfully');
 
