@@ -1,0 +1,16 @@
+{
+  "name": "ibuk-pdf",
+  "version": "1.0.0",
+  "description": "Saving a book from ibuk.pl from online mode to a pdf file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["ibuk", "book", "online", "pdf"],
+  "author": "Eugene Bachura",
+  "license": "MIT",
+  "dependencies": {
+    "pdf-lib": "^1.17.1",
+    "puppeteer": "^23.5.3"
+  }
+}
