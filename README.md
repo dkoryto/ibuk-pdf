@@ -16,3 +16,29 @@ Node.js: Upewnij się, że masz zainstalowany Node.js na swoim systemie. Jeśli 
 ```bash
  npm install 
 ```
+## Konfiguracja
+Skrypt korzysta z pliku konfiguracyjnego config.js znajdującego się w katalogu głównym projektu. Przed uruchomieniem skryptu edytuj ten plik, aby ustawić dane logowania i preferencje dotyczące wyników
+### Opcje konfiguracyjne w pliku config.js:
+``` javascript
+module.exports = {
+  startPage: 1,  // Numer strony, od której rozpocząć zapis
+  totalPages: 3,  // Łączna liczba stron do zapisania
+  screenshotsParentDir: './screenshots',  // Katalog do zapisywania zrzutów ekranu
+  pdfParentDir: './pdf',  // Katalog do zapisywania pliku PDF
+  loginUrl: 'https://www.ibuk.pl/logowanie.html',  // URL strony logowania IBUK.PL
+  targetUrl: 'https://reader.ibuk.pl/?p=book:291462',  // URL czytnika książek
+  credentials: {
+    username: 'YOUR_EMAIL',  // Twój login do IBUK.PL
+    password: 'YOUR_PASSWORD'  // Twoje hasło do IBUK.PL
+  }
+};
+```
+## Jak uruchomić
+Po zainstalowaniu zależności i zaktualizowaniu pliku config.js, możesz uruchomić skrypt!
+Użyj następującego polecenia, aby rozpocząć działanie skryptu:
+```bash
+ node run.js 
+```
+- Skrypt otworzy okno przeglądarki, zaloguje się na Twoje konto IBUK.PL i rozpocznie zapisywanie zrzutów ekranu stron książki
+- Każda strona zostanie zapisana w katalogu screenshots w podkatalogu nazwanym na podstawie tytułu książki
+- Po zapisaniu wszystkich stron, zostaną one połączone w jeden plik PDF i zapisane w katalogu pdf
