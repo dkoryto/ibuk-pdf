@@ -5,7 +5,7 @@ Ten skrypt automatyzuje proces zapisywania wypożyczonej książki z serwisu IBU
 - Automatyzuje logowanie do IBUK.PL
 - Wykonuje zrzuty ekranu stron książki i zapisuje je w dynamicznie utworzonym folderze
 - Łączy zrzuty ekranu w jeden plik PDF z nazwą na podstawie tytułu książki
-- Opcje konfiguracji dla danych logowania, zakresu stron i lokalizacji zapisu
+- Posiada opcje konfiguracji dla danych logowania, zakresu stron i lokalizacji zapisu
 
 ## Wymagania
 Node.js: Upewnij się, że masz zainstalowany Node.js na swoim systemie. Jeśli nie, pobierz go [tutaj](https://nodejs.org)
@@ -34,7 +34,7 @@ module.exports = {
 };
 ```
 ## Jak uruchomić
-Po zainstalowaniu zależności i zaktualizowaniu pliku config.js, możesz uruchomić skrypt!
+Po zainstalowaniu zależności i zaktualizowaniu pliku config.js, możesz uruchomić skrypt.
 Użyj następującego polecenia, aby rozpocząć działanie skryptu:
 ```bash
  node run.js 
