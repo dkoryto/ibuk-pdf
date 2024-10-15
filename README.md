@@ -42,3 +42,8 @@ Użyj następującego polecenia, aby rozpocząć działanie skryptu:
 - Skrypt otworzy okno przeglądarki, zaloguje się na Twoje konto IBUK.PL i rozpocznie zapisywanie zrzutów ekranu stron książki
 - Każda strona zostanie zapisana w katalogu screenshots w podkatalogu nazwanym na podstawie tytułu książki
 - Po zapisaniu wszystkich stron, zostaną one połączone w jeden plik PDF i zapisane w katalogu pdf
+
+## Uwagi prawne lub pomoc
+Ten skrypt jest udostępniany wyłącznie w celach edukacyjnych. Jeśli jesteś właścicielem IBUK.PL lub masz prawne zastrzeżenia dotyczące korzystania z tego skryptu, proszę o kontakt, aby rozwiązać problem. W razie potrzeby natychmiast usunę, zmodyfikuję lub poprawię wszelkie problemy, które zgłosisz.
+
+Jeśli masz również sugestie dotyczące ulepszeń lub potrzebujesz pomocy w dostosowaniu skryptu, zachęcam do kontaktu w celu omówienia możliwych rozwiązań :)
