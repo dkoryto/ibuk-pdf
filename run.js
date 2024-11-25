@@ -1,10 +1,10 @@
- const { exec } = require('child_process');
-const path = require('path');
+// Starting point. Runs the scraper script
 
-// Path to the scraper script
-const scraperPath = path.join(__dirname, 'src', 'scraper.js');
+const { exec } = require("child_process");
+const path = require("path");
 
-// Run the scraper
+const scraperPath = path.join(__dirname, "src", "scraper.js");
+
 exec(`node ${scraperPath}`, (error, stdout, stderr) => {
   if (error) {
     console.error(`Error: ${error.message}`);
