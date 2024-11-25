@@ -1,16 +1,16 @@
-const fs = require('fs');
-const { PDFDocument } = require('pdf-lib');
+// Additional features for delaying and merging images into PDFs
 
-// Delay function
+const fs = require("fs");
+const { PDFDocument } = require("pdf-lib");
+
 async function delay(time) {
-  return new Promise(resolve => setTimeout(resolve, time));
+  return new Promise((resolve) => setTimeout(resolve, time));
 }
 
-// Combine PNG images into a single PDF
 async function combineImagesToPDF(imagePaths, outputPdfPath) {
   const pdfDoc = await PDFDocument.create();
 
-  for (let imagePath of imagePaths) {
+  for (const imagePath of imagePaths) {
     const imageBytes = fs.readFileSync(imagePath);
     const image = await pdfDoc.embedPng(imageBytes);
     const page = pdfDoc.addPage([image.width, image.height]);
@@ -18,7 +18,7 @@ async function combineImagesToPDF(imagePaths, outputPdfPath) {
       x: 0,
       y: 0,
       width: image.width,
-      height: image.height
+      height: image.height,
     });
   }
 
